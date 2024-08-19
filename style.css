@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@font-face {
+    font-family: 'Square Sans Serif 7';
+    src: url(font/square_sans_serif_7.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Bruno Ace", sans-serif;
+    background: #2a2a2a;
+}
+
+.navbar {
+    background-color: rgba(19, 19, 19, 1);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    z-index: 1;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-menu li {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d1bfa3;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition for color and transform */
+}
+.nav-menu a {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d1bfa3;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 1000;
+    }
+
+
+
+/* Show border on hover */
+.nav-menu a:hover {
+  /* ... your existing styles ... */
+  border: 2px solid #d1bfa3; /* Add border on hover */
+  border-radius: 20px; /* Optional: Add rounded corners to the border */
+}
+.kdesign-logo h1 {
+    font-family: 'Square Sans Serif 7', sans-serif;
+    font-size: 150px;
+    font-weight: 100;
+    color: #C3FF00; /* Neon yellow-green color */
+    position: absolute;
+    top: 10px;
+    z-index: 1; /* Ensure it stays on top */
+    left: 41px;
+    width: 757px;
+    height: 171px;
+    overflow:inherit;
+    animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.location-badge {
+    position: absolute;
+    top: 300px; /* Adjust the position from the top */
+    left: -10px; /* Adjust the position from the left */
+    display: flex;
+    align-items: center;
+    background-color: #151515; /* Dark background */
+    padding: 10px 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    z-index: 2; /* Ensure it stays above the background */
+    animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.location-badge span {
+    font-size: 25px;
+    color: #D3CBB8; /* Light beige color matching the text */
+    margin-right: 10px;
+    font-family: 'Square Sans Serif 7', sans-serif; /* Custom font if applied */
+}
+
+.location-badge img {
+    height: 30px;
+    width: 30px;
+
+}
+
+
+.hero-section {
+    position: relative;
+    padding: 120px 0; /* Adjust padding as needed */
+    background: #2a2a2a; /* Darker background for contrast */
+    height: 600px; /* Adjust the height as needed */
+    display: flex;
+    align-items: flex-end; /* Align the black box and image at the bottom */
+    animation: slideInLeft 1.4s ease-in-out forwards;
+}
+
+.black-box {
+    background-color: rgba(18,18,18,255);
+    width: 80%;
+    height: 250px; /* Adjust the height as needed */
+    position: relative;
+    top: -50px;
+    left: 150px;
+    z-index: 1; /* Black box at a lower layer */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    animation: slideInLeft 1.4s ease-in-out forwards;
+  }
+
+.helmet-image {
+    position: absolute;
+    right: 200px; /* Adjust positioning to match your design */
+    bottom: -30px; /* Position it above the black box */
+    z-index: 2; /* Helmet image at a higher layer */
+    animation: slideInLeft 1.4s ease-in-out forwards;
+}
+
+.helmet-image img {
+    height: 800px; /* Adjust size as needed */
+}
+
+/*SLIDE ANIMATION*/
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#bg-video {
+    position: absolute;
+    top: 100px;
+    left: 31.5%;
+    min-width: 100%;
+    min-height: 135%;
+    width: 100x;
+    height: 100px;
+    z-index: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    opacity: 10%;
+}
+
+#sign-video {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    min-width: 100%;
+    min-height: 18%;
+    width: 0x;
+    height: 0px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    opacity: 90%; 
+     
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    
+  }
+
+/* LOGO RYAN */ 
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+      background-color: #C3FF00;
+      padding: 10px;
+      white-space: nowrap;
+      position: relative;
+      width: 595px;
+      height: 180px;
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #C3FF00;
+      left: 130px;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  
+  .logos-slide img {
+    height: 120px;
+    margin: 20px;
+  }
+
+  .details {
+    color: #D3CBB8;
+    text-align: right;
+  }
+
+  .details .name {
+    position: absolute;
+    font-size: 80px;
+    right: 100px;
+    top: 950px;
+  }
+
+  .details .title {
+    position: absolute;
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    right: 290px;
+  }
+
+.text-section h1 {
+    font-family: 'Square Sans Serif 7', sans-serif;
+    font-size: 36px;
+    color: #D3CBB8; /* Beige color */
+    margin: 0;
+}
+
+.text-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #D3CBB8;
+    margin: 5px 0 0 0;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C3FF00;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 20px;
+    width: 1143px; /* Matches the width of the logo container + padding */
+    background-color: #2a2a2a;
+    left: 150px;
+    position: absolute;
+  }
+
+  .about-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1; /* Places the box behind the text */
+  }
+
+  .about-text {
+    flex: 3;
+    padding-right: 20px;
+    color: #D3CBB8;
+    z-index: 2;
+  }
+
+  .about-text p {
+    font-family:"Kanit", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    
+  }
+
+  /* .about-button {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #151515;
+    color: #C3FF00;
+    font-family: 'Square Sans Serif 7', sans-serif;
+    font-size: 24px;
+    border-left: 2px solid #C3FF00;
+    border-radius: 10px;
+  }
+
+  .about-button :hover{
+    background-color: #C3FF00;
+    color: #C3FF00; */
+  /* } */
+  .about-button {
+    background-color: #111;
+    color: #ccff00;
+    padding: 10px 20px;
+    border: 2px solid #ccff00;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+    flex: 1;
+    
+}
+
+.about-button:hover {
+    background-color: #ccff00;
+    color: #111;
+}
+  
+
+  /* New section for the slider */
+  .works-section {
+    text-align: center;
+    position: relative;
+    margin-top: 500px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-family: 'Bruno Ace', sans-serif;
+    color: #D3CBB8;
+    
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow:hidden;
+    margin-top: 200px;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 240px;
+    background-color: #333;
+    border-radius: 20px;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .slide.active {
+   border: 3px solid #C3FF00;
+  }
+  
+  .slide img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #D3CBB8;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow-left {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+  }
+  
+  .arrow-right {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+  }
+
+  /* MEET LOGO */ 
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .meet-logos {
+    overflow: hidden;
+      background-color: #000000;
+      padding: 10px;
+      white-space: nowrap;
+      position: relative;
+      width: 1165px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #C3FF00;
+      left: 155px;
+      margin-top: 150px;
+  }
+
+  .meet-logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  
+  .meet-logos-slide img {
+    height: 50px;
+    margin: 20px;
+  }
+
+  /*VIDEO*/
+
+  .tenkai-video-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    left: 135px;
+}
+
+.tenkai-video-container video {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Tenkai About */
+
+.tenkai-about-section {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #CBFF05;
+    border-radius: 10px;
+    background-color: #070707;
+    text-align: left;
+    position: relative;
+}
+
+.tenkai-about-section img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    position: relative;
+}
+
+.tenkai-about-text {
+    flex: 1;
+}
+
+.tenkai-about-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tenkai-about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #D3CBB8;
+    font-family: "Kanit", sans-serif;
+}
+
+/* SOCIAL */
+
+.social-media-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.social-media-section .social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.social-media-section img {
+    width: 50px;
+    height: auto;
+}
+
+.social-media-section span {
+    font-size: 18px;
+    color: white;
+}
+
+.contact-section img{
+    width: 1180px;
+}
+
+.social-item a:link,
+.social-item a:visited,
+.social-item a:hover,
+.social-item a:active {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none; /* Removes the underline */
+    transition: color 0.3s ease;
+}
